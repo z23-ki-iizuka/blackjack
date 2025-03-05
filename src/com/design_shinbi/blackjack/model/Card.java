@@ -31,6 +31,12 @@ public class Card {
 	    public int getNumber() {
 	        return number;
 	    }
+	    
+	    /**
+	     * 番号に対応する文字列を所得します。
+	     * @param number　カードの番号（１～１３）
+	     * @return　番号に対応する文字列（"A", "2", "3", ..., "K"）
+	     */
 	 
 	    public static String getNumberString(int number) {
 	        String string = null;
@@ -53,6 +59,12 @@ public class Card {
 	 
 	        return string;
 	    }
+	    
+	    /**
+	     * カードの文字列形式を返します。
+	     * 例：［❤A］,　［♦１０］など
+	     * @return カードを表す文字列
+	     */
 	 
 	    public String toString() {
 	        String string = String.format(
@@ -60,6 +72,11 @@ public class Card {
 	        );
 	        return string;
 	    }
+	    
+	    /**
+	     * ５２枚のトランプカードをリストとして所得します。
+	     * @return　５２枚のカードを含むリスト
+	     */
 	 
 	    public static List<Card> getAllCards() {
 	        List<Card> list = new ArrayList<Card>();
